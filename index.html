@@ -1,0 +1,197 @@
+    <!DOCTYPE html>
+    <!---->
+
+
+    <html>
+        <head>
+            <title>Recipe Generator!</title>
+            <!--link to the css stylesheet--> 
+            <link rel="stylesheet" href="style.css">
+
+            <!--font-->>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/af4d82045e.js" crossorigin="anonymous"></script>
+        </head>
+
+        <body>
+            <!--navigation bar containing name, drop-down, dark and light mode and search-->
+            <header class="navbar">
+                <div class="logo">
+                    <span>Curry-ous Bites</span>
+                </div>
+
+                <nav>
+                    <ul class="nav-links">
+                        <li class="dropdown">
+                            <a href="#">Recipes</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#breakfast">Breakfast</a> </li>
+                                <li><a href="#lunch">Lunch</a> </li>
+                                <li><a href="#snacks">Snacks</a> </li>
+                                <li><a href="#dinner">Dinner</a> </li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="about">
+                    <a href="about.html"> About </a>
+                </div>
+
+                <button id="darkModeToggle"><i class="fa-regular fa-moon"></i></i></button>
+
+                <input type="text" id="searchBar" placeholder="Search for a recipe...">
+
+            
+            </header>
+
+            <!--Welcome Message + Picture-->
+            <main>
+
+                <div class="background-container">
+                    <img src="welcome.jpg" alt="Background">
+                    <div class="text">
+                        <h1>Welcome to Curry-ous Eats!</h1>
+                        <br><br>
+                        <p>Looking for the <b>perfect recipe?</b> you're craving something <b>sweet, savory, or quick</b>, we have got you covered! </p>
+                        <br>
+                        <p>Start cooking smarter and enjoy homemade meals with ease. <b>Happy cooking!</b></p>
+                    </div>
+                </div>
+
+                <button id="randomRecipeBtn">Surprise Me!</button>
+
+                
+                
+
+                <section class="category" id="breakfast">
+                    <h2>Breakfast Recipes</h2>
+                    <div class="recipe-container">
+                        <a href="b1-upma.html" class="recipe-card">
+                            <img src="upma.jpeg" alt="Upma_photo">
+                            <h2>Upma</h2>
+                            <p>Savory semolina porridge dish!</p>
+                            <p>30 mins</p>
+                        </a>
+
+                        <a href="b2-poha.html" class="recipe-card">
+                            <img src="poha.jpg" alt="Poha_photo">
+                            <h2>Poha</h2>
+                            <p>Flattened Savoury Rice!</p>
+                            <p>15 mins</p>
+                        </a>
+
+                        <a href="b3-idli.html" class="recipe-card">
+                            <img src="idli.jpg" alt="Idli_photo">
+                            <h2>Idli</h2>
+                            <p>Soft Steamed Rice Cakes!</p>
+                            <p>30 mins</p>
+                        </a>
+                    </div>
+                </section>
+                <section class="category" id="lunch">
+                    <h2>Lunch Recipes</h2>
+
+                    <div class="recipe-container">
+                        <a href="l1-butterchicken.html" class="recipe-card">
+                            <img src="butterchicken.jpg" alt="ButterChicken_photo">
+                            <h2>Butter Chicken</h2>
+                            <p>Creamy tomato chicken curry!</p>
+                            <p>60 mins</p>
+                        </a>
+
+                        <a href="l2-paneertikka.html" class="recipe-card">
+                            <img src="paneertikka.jpeg" alt="PaneerTikka_photo">
+                            <h2>Paneer Tikka</h2>
+                            <p>FGrilled spiced cottage cheese!</p>
+                            <p>40 mins</p>
+                        </a>
+
+                        <a href="l3-pulao.html" class="recipe-card">
+                            <img src="pulao.jpg" alt="Pulao_photo">
+                            <h2>Pulao</h2>
+                            <p>Fragrant spiced rice dish!</p>
+                            <p>35 mins</p>
+                        </a>
+                    </div>
+                </section>
+                <section class="category" id="snacks">
+                    <h2>Snack Recipes</h2>
+
+                    <div class="recipe-container">
+                    <a href="s1-vadapav.html" class="recipe-card">
+                        <img src="vadapav.jpeg" alt="VadaPav_photo">
+                        <h2>Vada Pav</h2>
+                        <p>Spicy potato burger.!</p>
+                        <p>20 mins</p>
+                    </a>
+
+                    <a href="s2-frankie.html" class="recipe-card">
+                        
+                        <img src="frankie.jpg" alt="frankie_photo">
+                        <h2>Frankie</h2>
+                        <p> Stuffed rolled flatbread.!</p>
+                        <p>20 mins</p>
+                    </a>
+
+                    <a href="s3-samosa.html" class="recipe-card">
+                        
+                        
+                        <img src="samosa.jpg" alt="samosa_photo">
+                        <h2>Samosa</h2>
+                        <p>Crispy stuffed pastry!</p>
+                        <p>35 mins</p>
+                    </a>
+                </div>
+
+                </section>
+                <section class="category" id="dinner">
+
+                    
+                    <h2>Dinner Recipes</h2>
+
+                    <div class="recipe-container">
+                        <a href="d1-malaikofta.html" class="recipe-card">
+                            <img src="malaikofta.jpeg" alt="malaikofta_photo">
+                            <h2>Malai Kofta</h2>
+                            <p>Creamy dumpling curry.</p>
+                            <p>60 mins</p>
+                        </a>
+        
+                        <a href="d2-cholebhature.html" class="recipe-card">
+                            <img src="cholebhature.jpeg" alt="cholebhature">
+                            <h2>Chole Bhature</h2>
+                            <p>Spiced chickpeas with fried bread!</p>
+                            <p>60 mins</p>
+                        </a>
+        
+                        <a href="d3-rajma.html" class="recipe-card">
+                            <img src="rajma.jpg" alt="rajma_photo">
+                            <h2>Rajma</h2>
+                            <p>Hearty kidney bean curry!</p>
+                            <p>55 mins</p>
+                        </a>
+                    </div>
+                </section>
+            </main>
+
+            <!--Random Recipe Generator-->
+
+            <!--Meal(new page): Individual blocks containing Picture, Name, 2line detail and Prep Time-->
+
+            <!--On clicking meal, (new page) containing big img in bg, recipe name, quick info(time,
+            ingredients, servings, spiciness, veg or non-veg) with fonts, detailed info(ingredients,
+            steps, faqs) -->
+
+        </body>
+
+        <footer>
+            <!--conclusion containing: Recipe Generator, 2,3 lines about the project, creator socials 
+            and thank you!-->
+
+            <script src="index.js"></script>
+        </footer>
+    </html>

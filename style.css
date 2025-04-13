@@ -1,0 +1,320 @@
+/*font*/
+.playfair-display-sc-regular {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .playfair-display-sc-bold {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .playfair-display-sc-black {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .playfair-display-sc-regular-italic {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .playfair-display-sc-bold-italic {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .playfair-display-sc-black-italic {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  html, body {
+    scroll-behavior:auto; /* Ensures instant scrolling */
+    overflow-x:hidden; /* Prevents unwanted horizontal scroll */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Playfair Display SC;
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-left: auto;
+    padding: 15px 30px;
+    background-color: rgb(227, 190, 96);
+    color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo span{
+    margin-left: 8px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li{
+    position: relative;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color:black;
+    font-size:18px;
+    padding:8px 12px;
+    display: block;
+}
+
+.dropdown-menu{
+    display:none;
+    position:absolute;
+    top:35px;
+    left:0;
+    background-color: white;
+    list-style: none;
+    width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+.dropdown-menu li{
+    border-bottom: 1px solid black;
+}
+
+.dropdown-menu a{
+    color:black;
+    padding: 10px;
+    display: block;
+
+}
+
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+
+.about a{
+    text-decoration: none;
+    color:black;
+    font-size:18px;
+    padding:8px 12px;
+    display: block;
+}
+
+main{
+    
+    padding-top: 0px;
+}
+
+section{
+    padding: 50px;
+    text-align:center;
+
+}
+
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    overflow: hidden;
+}
+
+.background-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area */
+    z-index: -1; /* Sends the image to the background */
+}
+
+.background-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(235, 227, 227, 0.5);
+}
+
+.text {
+    position: relative;
+    color: rgb(12, 12, 11);
+    text-size-adjust: 500px;
+    text-align: left;
+    padding-top:100px;
+    padding-left: 20px;
+    
+}
+
+.text h1{
+    font-size: 50px;
+    
+}
+
+.text p{
+    font-size:20px;
+}
+
+.category{
+    margin: 40px 0;
+}
+
+.category h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.recipe-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.recipe-card{
+    width: 250px;
+    height: 500px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: centre;
+    color: black;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover{
+    transform: scale(1.05);
+}
+
+.recipe-card img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.recipe-card h3{
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.recipe-card p{
+    font-size: 14px;
+}
+
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+/* Navbar and dropdown menu in dark mode */
+.dark-mode .navbar, 
+.dark-mode .category {
+    background-color: #333;
+}
+
+.dark-mode .navbar .logo span, 
+.dark-mode .navbar .nav-links a, 
+.dark-mode .navbar .about a {
+    color: white !important;
+}
+
+/* Dropdown menu styles in dark mode */
+.dark-mode .dropdown-menu {
+    background-color: black !important;
+    border: 1px solid #555; /* Optional: Light border for visibility */
+}
+
+.dark-mode .dropdown-menu li a {
+    color: white !important;
+}
+
+
+#darkModeToggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#darkModeToggle i {
+    color: #333; /* Default color for light mode */
+    transition: color 0.3s ease;
+}
+
+.dark-mode #darkModeToggle i {
+    color: white !important; /* White icon for dark mode */
+}
+
+/* Hover Effect */
+#darkModeToggle:hover {
+    background: rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+}
+
+/* Dark Mode Hover Effect */
+.dark-mode #darkModeToggle:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+
+.dark-mode .navbar .logo span, 
+.dark-mode .navbar .nav-links a, 
+.dark-mode .navbar .about a {
+    color: white !important;
+}
+
+
+#randomRecipeBtn {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    border-radius: 5px;
+}
+
+#randomRecipeBtn:hover {
+    background-color: #e68900;
+}
+
+
